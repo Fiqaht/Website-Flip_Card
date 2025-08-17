@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Flip Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="name-prompt-container" id="namePrompt">
+            <div class="dialog-box">
+                <p class="prompt-text">Enter your name:</p>
+                <input type="text" id="nameInput" placeholder="Your Name">
+                <button id="okButton">OK</button>
+            </div>
+        </div>
+
+        <div class="main-game-area" style="display: none;">
+            <div class="game-info">
+                <h2>Game Info</h2>
+                <p>Name: <span id="playerName"></span></p>
+                <p>Attempts: <span id="attemptsCount">0</span></p>
+                <p>Time: <span id="timeCount">0:00</span></p>
+                <button id="restartButton">Restart</button>
+            </div>
+
+            <div class="card-board">
+                </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
